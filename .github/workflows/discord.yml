@@ -9,8 +9,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Send message to Discord
-        uses: Ilshidur/action-discord@v3
+        - name: Send message to Discord
+        uses: Ilshidur/action-discord@v2
+
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
         with:
