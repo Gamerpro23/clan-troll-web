@@ -15,8 +15,6 @@ jobs:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
         with:
           args: >
-            Nuevo push en
-            [${{ github.repository }}](https://github.com/${{ github.repository }})
-            por `${{ github.actor }}`.
             Último commit:
-            https://github.com/${{ github.repository }}/commit/${{ github.sha }}
+            [${{ github.sha }}](https://github.com/${{ github.repository }}/commit/${{ github.sha }})
+            por `${{ github.actor }}`.
