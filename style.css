@@ -1,0 +1,39 @@
+.hero {
+  text-align:center;
+  background:radial-gradient(circle at top, #b30000 0, #141414 55%, #050509 100%);
+  position:relative;
+  overflow:hidden;
+}
+
+.hero::before {
+  content:"";
+  position:absolute;
+  width:140%;
+  height:140%;
+  background:radial-gradient(circle, rgba(244,197,66,0.12) 0, transparent 60%);
+  top:-20%;
+  left:-20%;
+  opacity:0.7;
+}
+
+.btn-neon {
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 28px;
+  color:#ffe48a;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-weight:bold;
+  letter-spacing:1px;
+  border:2px solid #f4c542;
+  border-radius:999px;
+  box-shadow:0 0 12px rgba(244,197,66,0.7);
+  transition:box-shadow 0.2s, transform 0.1s, background 0.2s, color 0.2s;
+}
+
+.btn-neon:hover {
+  background:#f4c542;
+  color:#000;
+  box-shadow:0 0 24px rgba(244,197,66,0.9);
+  transform:translateY(-2px);
+}
